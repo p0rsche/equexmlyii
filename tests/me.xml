@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="http://public.gradematic/shared/quexml.xsd" id="172">
+    <title>DCARF Example Questionnaire</title>
+    <subtitle>Example</subtitle>
+    <investigator id="3">
+        <name>
+            <firstName>Betsy</firstName>
+            <lastName>Betsy</lastName>
+        </name>
+        <organisation>Deakin University</organisation>
+    </investigator>
+    <dataCollector id="4">
+        <name>
+            <firstName>Betsy</firstName>
+            <lastName>Betsy</lastName>
+        </name>
+        <organisation>Deakin University</organisation>
+    </dataCollector>
+    <questionnaireInfo>
+        <position>before</position>
+        <text>Please complete all questions</text>
+        <administration>self</administration>
+    </questionnaireInfo>
+    <questionnaireInfo>
+        <position>after</position>
+        <text>Thank you for completing the questionnaire!</text>
+        <administration>self</administration>
+    </questionnaireInfo>
+    <section>
+        <sectionInfo>
+            <position>title</position>
+            <text>This is the first section</text>
+            <administration>self</administration>
+        </sectionInfo>
+        <question>
+            <text>What do you think about...</text>
+            <directive>
+                <position>during</position>
+                <text>Please cross the most appropriate box</text>
+                <administration>self</administration>
+            </directive>
+            <subQuestion varName="A1_A">
+                <text>The first part of a matrix question</text>
+            </subQuestion>
+            <subQuestion varName="A1_B">
+                <text>The second question in a matrix question</text>
+            </subQuestion>
+            <response varName="A1_1">
+                <free>
+                    <format>longtext</format>
+                    <length>20</length>
+                    <label>Free response</label>
+                </free>
+            </response>
+            <response varName="A1_2">
+                <fixed>
+                    <category>
+                        <label>They are not useful</label>
+                        <value>1</value>
+                    </category>
+                    <category>
+                        <label>They are useful</label>
+                        <value>2</value>
+                    </category>
+                    <category>
+                        <label>Don't Know</label>
+                        <value>3</value>
+                    </category>
+                </fixed>
+            </response>
+        </question>
+    </section>
+</questionnaire>

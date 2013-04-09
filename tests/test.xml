@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../quexml/quexml.xsd" id="1">
+    <title>DCARF Example Questionnaire</title>
+    <subtitle>Example</subtitle>
+    <investigator>
+        <name>
+            <salutation>Dr</salutation>
+            <firstName>Betsy</firstName>
+            <lastName>Blunsdon</lastName>
+        </name>
+        <organisation>Deakin University</organisation>
+        <address>
+            <street>221 Burwood Highway</street>
+            <suburb>BURWOOD</suburb>
+            <postcode>3125</postcode>
+            <country>Australia</country>
+        </address>
+        <phoneNumber>http://www.deakin.edu.au/dcarf/</phoneNumber>
+    </investigator>
+    <dataCollector>
+        <name>
+            <salutation>Dr</salutation>
+            <firstName>Betsy</firstName>
+            <lastName>Blunsdon</lastName>
+        </name>
+        <organisation>Deakin University</organisation>
+        <address>
+            <street>221 Burwood Highway</street>
+            <suburb>BURWOOD</suburb>
+            <postcode>3125</postcode>
+            <country>Australia</country>
+        </address>
+        <phoneNumber>http://www.deakin.edu.au/dcarf/</phoneNumber>
+    </dataCollector>
+    <questionnaireInfo>
+        <position>before</position>
+        <text>This is class for Ari Shomair</text>
+        <administration>self</administration>
+    </questionnaireInfo>
+    <questionnaireInfo>
+        <position>after</position>
+        <text>Thanks for filling! Viva Ari!</text>
+        <administration>self</administration>
+    </questionnaireInfo>
+    <section>
+        <sectionInfo>
+            <position>title</position>
+            <text>section b</text>
+            <administration>self</administration>
+        </sectionInfo>
+        <sectionInfo>
+            <position>before</position>
+            <text>Information about you</text>
+            <administration>interviewer</administration>
+        </sectionInfo>
+        <question>
+            <text>What do you think about...</text>
+            <directive>
+                <position>during</position>
+                <text>Please cross the most appropriate box</text>
+                <administration>self</administration>
+            </directive>
+            <subQuestion varName="A1_A">
+                <text>The first part of a matrix question</text>
+            </subQuestion>
+            <subQuestion varName="A1_B">
+                <text>The second question in a matrix question</text>
+            </subQuestion>
+            <response varName="A1">
+                <fixed>
+                    <category>
+                        <label>They are not useful</label>
+                        <value>1</value>
+                    </category>
+                    <category>
+                        <label>They are useful</label>
+                        <value>2</value>
+                    </category>
+                    <category>
+                        <label>Don't Know</label>
+                        <value>3</value>
+                    </category>
+                </fixed>
+            </response>
+        </question>
+    </section>
+</questionnaire>
