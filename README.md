@@ -1,4 +1,4 @@
 equexmlyii
 ==========
 
-equexmlyii tool for parsing QueXML
+PHP classes for easily creating QUeXML-based valid questionnaries XML files.
